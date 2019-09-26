@@ -1,0 +1,47 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- <div class="sidenav">
+  <div class="login-main-text">
+    <h2>Book Your Tickets<br> SignUP Page</h2>
+    <p>Register for booking.</p>
+  </div>
+</div> -->
+<!-- <div class="main">
+  <div class="col-md-6 col-sm-12">
+    <div class="login-form"> -->
+<div class="container">
+  <div class="jumbotron">
+    <form>
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" class="form-control" placeholder="Name" required pattern="\w+" name="name">
+      </div>
+      <div class="form-group">
+        <label>Email id</label>
+        <input type="email" class="form-control" placeholder="abc@gmail.com">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" name="pwd1" class="form-control" placeholder="************"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+      </div>
+      <div class="form-group">
+        <label> Confirm Password</label>
+        <input type="password" name="pwd2" class="form-control" placeholder="************">
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" class="form-control" placeholder="91**********" minlength="10" maxlength="12">
+      </div>
+      <br>
+      <button type="submit" class="btn btn-secondary">Register</button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;
+      <!-- <button type="button" class="btn btn-black" routerLink="/login">Login</button> -->
+    </form>
+  </div>
+</div>
+<router-outlet></router-outlet>   
